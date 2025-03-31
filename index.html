@@ -204,6 +204,7 @@
       display: flex;
       justify-content: center;
       gap: 15px;
+      flex-wrap: wrap;
     }
 
     .social-links a {
@@ -282,6 +283,15 @@
       .anime-grid {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
       }
+
+      .social-links {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .social-links a {
+        width: 80%;
+      }
     }
   </style>
 </head>
@@ -313,66 +323,79 @@
       <h2 class="section-title">Animes em Destaque</h2>
       <div class="anime-grid">
         <div class="anime-card">
-          <img src="/api/placeholder/400/320" alt="Anime 1">
+          <img src="img/naruto.png" alt="Naruto">
           <div class="anime-card-content">
             <h3>Naruto</h3>
-            <p>Uma jornada épica de Tanjiro para salvar sua irmã e vingar sua família.</p>
+            <p>A jornada do jovem ninja que sonha em se tornar Hokage e ganhar o reconhecimento de sua aldeia.</p>
           </div>
         </div>
         <div class="anime-card">
-          <img src="/api/placeholder/400/320" alt="Anime 2">
+          <img src="img/Jujutsu Kaisen.png" alt="Jujutsu Kaisen">
           <div class="anime-card-content">
-            <h3>Attack on Titan</h3>
-            <p>A luta da humanidade contra os gigantes em um mundo pós-apocalíptico.</p>
+            <h3>Jujutsu Kaisen</h3>
+            <p>Estudantes de feitiçaria combatem maldições em um mundo onde emoções negativas ganham forma física.</p>
           </div>
         </div>
         <div class="anime-card">
-          <img src="/api/placeholder/400/320" alt="Anime 3">
+          <img src="img/Dr Stone.png" alt="Dr Stone">
           <div class="anime-card-content">
-            <h3>My Hero Academia</h3>
-            <p>Um mundo onde quase todos possuem superpoderes e lutam por justiça.</p>
+            <h3>Dr Stone</h3>
+            <p>Após a humanidade ser petrificada, um gênio da ciência tenta reconstruir a civilização do zero.</p>
           </div>
         </div>
         <div class="anime-card">
-          <img src="/api/placeholder/400/320" alt="Anime 4">
+          <img src="img/Demon Slayer.jpeg" alt="Demon Slayer">
+          <div class="anime-card-content">
+            <h3>Demon Slayer</h3>
+            <p>Uma jornada épica de Tanjiro para salvar sua irmã e vingar sua família contra os demônios.</p>
+          </div>
+        </div>
+        <div class="anime-card">
+          <img src="img/onepiece.png" alt="One Piece">
           <div class="anime-card-content">
             <h3>One Piece</h3>
-            <p>A épica jornada de Luffy para se tornar o Rei dos Piratas.</p>
+            <p>A épica jornada de Luffy e sua tripulação pelos mares em busca do lendário tesouro One Piece.</p>
+          </div>
+        </div>
+        <div clasimg\My Hero Academia.jpg="anime-card">
+          <img src="img/My Hero Academia.jpg" alt="My Hero Academia">
+          <div class="anime-card-content">
+            <h3>My Hero Academia</h3>
+            <p>Em um mundo onde quase todos possuem superpoderes, um jovem sem poderes luta para se tornar um herói.</p>
+          </div>
+        </div>
+        <div class="anime-card">
+          <img src="img/attack-on-titan.jpg" alt="Attack on Titan">
+          <div class="anime-card-content">
+            <h3>Attack on Titan</h3>
+            <p>A luta da humanidade contra gigantes em um mundo cercado por muralhas e cheio de mistérios ocultos.</p>
+          </div>
+        </div>
+        <div class="anime-card">
+          <img src="img/Hunter x Hunter.jpg" alt="Hunter x Hunter">
+          <div class="anime-card-content">
+            <h3>Hunter x Hunter</h3>
+            <p>A jornada de Gon para se tornar um Hunter e encontrar seu pai, enfrentando desafios perigosos pelo
+              caminho.</p>
           </div>
         </div>
       </div>
-      <div class="anime-card">
-        <img src="/api/placeholder/400/320" alt="Anime 5">
-        <div class="anime-card-content">
-          <h3>Demon Slayer</h3>
-          <p>Uma jornada épica de Tanjiro para salvar sua irmã e vingar sua família.</p>
-        </div>
+    </section>
+
+    <section class="content-section">
+      <h2 class="section-title">Nos acompanhe nas redes sociais!</h2>
+      <p>Fique por dentro das últimas novidades, críticas e análises de seus animes favoritos!</p>
+      <div class="social-links">
+        <a href="https://www.youtube.com/" target="_blank">YouTube</a>
+        <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+        <a href="https://www.tiktok.com/" target="_blank">TikTok</a>
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
       </div>
-  </div>
-  <div class="anime-card">
-    <img src="/api/placeholder/400/320" alt="Anime 6">
-    <div class="anime-card-content">
-      <h3>One Piece</h3>
-      <p>A épica jornada de Luffy para se tornar o Rei dos Piratas.</p>
-    </div>
-  </div>
-  </div>
-  </section>
+    </section>
 
-  <section class="content-section">
-    <h2 class="section-title">Nos acompanhe nas redes sociais!</h2>
-    <p>Fique por dentro das últimas novidades, críticas e análises de seus animes favoritos!</p>
-    <div class="social-links">
-      <a href="https://www.youtube.com/" target="_blank">YouTube</a>
-      <a href="https://www.facebook.com/" target="_blank">Facebook</a>
-      <a href="https://www.tiktok.com/" target="_blank">TikTok</a>
-      <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+    <div class="author">
+      <p>💡 Projeto desenvolvido por <strong>Bonett Studios</strong></p>
     </div>
-  </section>
-
-  <div class="author">
-    <p>💡 Projeto desenvolvido por <strong>Bonett Studios</strong></p>
-  </div>
   </div>
 </body>
 
