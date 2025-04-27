@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidade - AnimeNação</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;700&display=swap');
+
+    :root {
+      --dark-blue: #0d1b2a;
+      --blue: #1b263b;
+      --light-blue: #415a77;
+      --gold: #d4af37;
+      --light-gold: #f5e6b5;
+      --text-color: #e0e1dd;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--dark-blue);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    .header {
+      background: linear-gradient(135deg, var(--blue) 0%, var(--dark-blue) 100%);
+      padding: 20px 0;
+      border-bottom: 3px solid var(--gold);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('https://via.placeholder.com/1500x500');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.2;
+      z-index: 0;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .logo {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--text-color);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo span {
+      color: var(--gold);
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+    }
+
+    .nav-links li {
+      margin-left: 25px;
+    }
+
+    .nav-links a {
+      color: var(--text-color);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .content-section {
+      background: var(--blue);
+      border-radius: 10px;
+      padding: 30px;
+      margin-bottom: 40px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      border-left: 4px solid var(--gold);
+    }
+
+    .section-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: var(--gold);
+      position: relative;
+    }
+
+    .page-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 30px;
+      color: var(--gold);
+    }
+
+    .privacy-content h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 20px;
+      color: var(--gold);
+      margin: 25px 0 15px;
+    }
+
+    .privacy-content p, .privacy-content ul {
+      margin-bottom: 15px;
+    }
+
+    .privacy-content ul {
+      padding-left: 20px;
+    }
+
+    .privacy-content li {
+      margin-bottom: 10px;
+    }
+
+    .author {
+      margin-top: 40px;
+      padding: 20px;
+      text-align: center;
+      border-top: 1px solid var(--light-blue);
+    }
+
+    .author p {
+      font-size: 16px;
+      color: var(--text-color);
+    }
+
+    .author strong {
+      color: var(--gold);
+    }
+
+    .btn {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--gold) 0%, var(--light-gold) 100%);
+      color: var(--dark-blue);
+      padding: 12px 30px;
+      border-radius: 30px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      margin-top: 20px;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+      background: var(--gold);
+    }
+
+    .last-updated {
+      font-style: italic;
+      text-align: right;
+      margin-top: 40px;
+      font-size: 14px;
+      color: var(--light-blue);
+    }
+
+    @media (max-width: 768px) {
+      .nav-container {
+        flex-direction: column;
+        padding: 15px;
+      }
+
+      .nav-links {
+        margin-top: 15px;
+      }
+
+      .nav-links li {
+        margin: 0 10px;
+      }
+
+      .page-title {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Anime<span>Nação</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Animes</a></li>
+        <li><a href="#">Reviews</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Contato</a></li>
+        <li><a href="termos-de-servico.html">Termos de Serviço</a></li>
+        <li><a href="politica-de-privacidade.html">Política de Privacidade</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="container">
+    <h1 class="page-title">Política de Privacidade</h1>
+
+    <section class="content-section">
+      <div class="privacy-content">
+        <p>A sua privacidade é importante para nós. É política do AnimeNação respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site AnimeNação.</p>
+
+        <h3>1. Informações que coletamos</h3>
+        <p>Solicitamos informações pessoais apenas quando realmente precisamos delas para lhe fornecer um serviço. Fazemo-lo por meios justos e legais, com o seu conhecimento e consentimento. Também informamos por que estamos coletando e como será usado.</p>
+        <p>Apenas retemos as informações coletadas pelo tempo necessário para fornecer o serviço solicitado. Quando armazenamos dados, protegemos dentro de meios comercialmente aceitáveis para evitar perdas e roubos, bem como acesso, divulgação, cópia, uso ou modificação não autorizados.</p>
+        <p>Não compartilhamos informações de identificação pessoal publicamente ou com terceiros, exceto quando exigido por lei.</p>
+
+        <h3>2. Cookies e dados de navegação</h3>
+        <p>Nosso site pode usar cookies para melhorar sua experiência. Cookies são pequenos arquivos de texto armazenados no seu navegador. Eles nos ajudam a:</p>
+        <ul>
+          <li>Entender como você utiliza nosso site;</li>
+          <li>Lembrar suas preferências;</li>
+          <li>Personalizar sua experiência;</li>
+          <li>Melhorar nossos serviços com base em dados de uso.</li>
+        </ul>
+        <p>Você pode controlar os cookies através das configurações do seu navegador. A recusa de cookies pode impedir o uso de determinadas funcionalidades do site.</p>
+
+        <h3>3. Dados analíticos</h3>
+        <p>Utilizamos ferramentas de análise para entender como os visitantes interagem com nosso site. Essas ferramentas coletam informações enviadas pelo seu dispositivo ou navegador, incluindo:</p>
+        <ul>
+          <li>Endereço IP;</li>
+          <li>Tipo de dispositivo;</li>
+          <li>Navegador utilizado;</li>
+          <li>Páginas visitadas;</li>
+          <li>Tempo de permanência;</li>
+          <li>País/região de acesso.</li>
+        </ul>
+        <p>Esses dados são utilizados apenas para melhorar nossos serviços e não identificam pessoalmente os usuários.</p>
+
+        <h3>4. Mídias sociais</h3>
+        <p>Nosso site inclui links para plataformas de mídias sociais. O uso desses botões ou links pode permitir que essas plataformas coletem seu endereço IP, página que está visitando, e configurar cookies para seu funcionamento adequado.</p>
+        <p>Interações com esses recursos são regidas pelas políticas de privacidade das empresas que os fornecem.</p>
+
+        <h3>5. Direitos do usuário</h3>
+        <p>Você tem os seguintes direitos relacionados aos seus dados:</p>
+        <ul>
+          <li>Direito de acesso aos dados que possuímos sobre você;</li>
+          <li>Direito de retificação de dados incorretos;</li>
+          <li>Direito ao esquecimento (exclusão de dados);</li>
+          <li>Direito de portabilidade;</li>
+          <li>Direito de apresentar uma reclamação à autoridade de controle.</li>
+        </ul>
+        <p>Para exercer qualquer desses direitos, entre em contato conosco através das informações fornecidas ao final desta política.</p>
+
+        <h3>6. Compromisso com menores</h3>
+        <p>Reconhecemos a importância de proteger a privacidade das crianças. Embora o AnimeNação seja direcionado para todas as idades, não coletamos intencionalmente informações pessoais de menores de 13 anos. Se você é pai ou responsável e acredita que seu filho nos forneceu informações pessoais, entre em contato conosco para que possamos tomar as medidas necessárias.</p>
+
+        <h3>7. Alterações nesta política</h3>
+        <p>Podemos atualizar nossa Política de Privacidade periodicamente. Assim, recomendamos que você revise esta página ocasionalmente para quaisquer mudanças. Notificaremos você sobre quaisquer alterações publicando a nova Política de Privacidade nesta página. Essas alterações são efetivas imediatamente após serem publicadas.</p>
+
+        <h3>8. Contato</h3>
+        <p>Se você tiver alguma dúvida ou sugestão sobre nossa Política de Privacidade, não hesite em nos contatar pelo email: contato@animenacao.com.br</p>
+
+        <div class="last-updated">
+          <p>Última atualização: Abril de 2025</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="author">
+      <p>💡 Projeto desenvolvido por <strong>Bonett Studios</strong></p>
+    </div>
+  </div>
+</body>
+
+</html>

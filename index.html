@@ -99,6 +99,30 @@
       color: var(--gold);
     }
 
+    /* Menu Rodapé */
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links li {
+      margin: 0 15px;
+    }
+
+    .footer-links a {
+      color: var(--light-blue);
+      text-decoration: none;
+      font-size: 14px;
+      transition: color 0.3s;
+    }
+
+    .footer-links a:hover {
+      color: var(--gold);
+    }
+
     .container {
       max-width: 1200px;
       margin: 40px auto;
@@ -292,6 +316,15 @@
       .social-links a {
         width: 80%;
       }
+
+      .footer-links {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .footer-links li {
+        margin: 5px 0;
+      }
     }
   </style>
 </head>
@@ -299,9 +332,9 @@
 <body>
   <header class="header">
     <div class="nav-container">
-      <a href="#" class="logo">Anime<span>Nação</span></a>
+      <a href="index.html" class="logo">Anime<span>Nação</span></a>
       <ul class="nav-links">
-        <li><a href="#">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="#">Animes</a></li>
         <li><a href="#">Reviews</a></li>
         <li><a href="#">Sobre</a></li>
@@ -395,6 +428,10 @@
 
     <div class="author">
       <p>💡 Projeto desenvolvido por <strong>Bonett Studios</strong></p>
+      <ul class="footer-links">
+        <li><a href="termos-de-servico.html">Termos de Serviço</a></li>
+        <li><a href="politica-de-privacidade.html">Política de Privacidade</a></li>
+      </ul>
     </div>
   </div>
 </body>
